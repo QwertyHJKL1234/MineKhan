@@ -1727,6 +1727,9 @@ async function MineKhan() {
 			chat("You're all alone. Sorry.")
 		}
 	})
+	commands.set("seed", args => {
+		chat(worldSeed)
+	})
 
 	function sendCommand(msg) {
 		msg = msg.substr(1)
